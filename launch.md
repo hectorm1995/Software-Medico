@@ -1,5 +1,6 @@
-## /Documentos/citas Medicas/api-clinica
+## RUN backend
 ```ruby
+/Documentos/citas Medicas/api-clinica
 php artisan serve
 ```
 ![texto alternativo de texto](./Imagenes/anexo3.PNG)
