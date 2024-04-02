@@ -13,3 +13,11 @@ ng serve
 
 https://spatie.be/docs/laravel-permission/v5/installation-laravel
 
+## Crear y copiar el archivo PermissionsDemoSeeder en /apiclinica/database/seeders/PermissionsDemoSeeder.php
+# el enlace es del archivo es el siguiente: https://spatie.be/docs/laravel-permission/v5/basic-usage/new-app
+## Agregar el correo de super-admin y contraseñas a los tres roles creados por defecto
+# finalmente con el siguiente comando se borra y se actualizan las bases de datos
+```ruby
+php artisan migrate:fresh --seed --seeder=PermissionsDemoSeeder
+```
+## Editar middelware en los archivo php
