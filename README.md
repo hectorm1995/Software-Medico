@@ -1,33 +1,33 @@
-# REQUISITOS DEL PROYECTO
-# PHP v8.1
-# Laravel v10.10
-# Node js v18.20
+## REQUISITOS DEL PROYECTO
+## PHP v8.1
+## Laravel v10.10
+## Node js v18.20
 
-# Instalar xampp
+## Instalar xampp
 https://www.apachefriends.org/es/download_success.html
-# Instalar composer
+## Instalar composer
 https://getcomposer.org/download/
 seleccionar check de path
 Todo siguiente
-# Crear una carpeta donde estará el proyecto
-# en el directorio de la carpeta clic derecho abrir git-bash
-# Crear proyecto con LARAVEL (API)
-# Seguir los pasos de esta web
+## Crear una carpeta donde estará el proyecto
+## en el directorio de la carpeta clic derecho abrir git-bash
+## Crear proyecto con LARAVEL (API)
+## Seguir los pasos de esta web
 https://www.binaryboxtuts.com/php-tutorials/laravel-8-json-web-tokenjwt-authentication/
 composer create-project laravel/laravel api-clinica
-#Abrir VS Code --> api-clinica --> env -->
+## Abrir VS Code --> api-clinica --> env -->
 DB_DATABASE=citas_medicas
-#abrir Xampp
-#Iniciar apache y Mysql
-#Crear una base de datos llamada citas_medicas
-# abrir git-bash
+## abrir Xampp
+## Iniciar apache y Mysql
+## Crear una base de datos llamada citas_medicas
+## abrir git-bash
 php artisan migrate
 composer require tymon/jwt-auth
-# archivo de configuración publico
+## archivo de configuración publico
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
-# Generación de la llave
+## Generación de la llave
 php artisan jwt:secret
-# Abrir VSCode
+## Abrir VSCode
 api-clinica/config/auth.php 
 buscar guards y pegar lo siguiente para habilitar la api
 'guards' => [
@@ -41,14 +41,14 @@ buscar guards y pegar lo siguiente para habilitar la api
             'hash' => false,
         ],
     ],
-# Configurar
+## Configurar
 /app/Models/User.php
-# buscar y añadir las siguientes lineas
+## buscar y añadir las siguientes lineas
 
 use Tymon\JWTAuth\Contracts\JWTSubject;
  
 class User extends Authenticatable implements JWTSubject
-# Al final
+## Al final
 
 /**
      * Get the identifier that will be stored in the subject claim of the JWT.
@@ -69,9 +69,9 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
-# Crear el auto controller
+## Crear el auto controller
 php artisan make:controller AuthController
-# Modificar el archivo app/Http/Controllers/AuthController.php
-#copiar y pegar todo lo correspondiente a ese archivo descrito en el enlace
-# Modificar el archivo routes/api.php
-#copiar y pegar todo lo correspondiente a ese archivo descrito en el enlace
+## Modificar el archivo app/Http/Controllers/AuthController.php
+## copiar y pegar todo lo correspondiente a ese archivo descrito en el enlace
+## Modificar el archivo routes/api.php
+## copiar y pegar todo lo correspondiente a ese archivo descrito en el enlace
