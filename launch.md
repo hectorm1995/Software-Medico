@@ -9,6 +9,6 @@ php artisan serve
 ng serve
 ```
 ## Instalación paquete de permisos Laravel
-```ruby
+
 https://spatie.be/docs/laravel-permission/v5/installation-laravel
-```
+
