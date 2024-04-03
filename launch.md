@@ -21,3 +21,11 @@ https://spatie.be/docs/laravel-permission/v5/installation-laravel
 php artisan migrate:fresh --seed --seeder=PermissionsDemoSeeder
 ```
 ## Editar middelware en los archivo php
+
+## Crear una politica con laravel
+### para el servidor del api-clinica
+```ruby
+php artisan make:policy UserPolicy --model=User
+```
+### run php artisan serve
+
