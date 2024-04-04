@@ -15,7 +15,7 @@ Todo siguiente
 ## Seguir los pasos de esta web
 https://www.binaryboxtuts.com/php-tutorials/laravel-8-json-web-tokenjwt-authentication/
 composer create-project laravel/laravel api-clinica
-## Abrir VS Code --> api-clinica --> env -->
+## Abrir VSCode --> api-clinica --> env -->
 DB_DATABASE=citas_medicas
 ## abrir Xampp
 ## Iniciar apache y Mysql
