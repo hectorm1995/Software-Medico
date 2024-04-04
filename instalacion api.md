@@ -10,8 +10,18 @@ https://getcomposer.org/download/
 seleccionar check de path
 Todo siguiente
 ## Crear una carpeta donde estará el proyecto
-## en el directorio de la carpeta clic derecho abrir git-bash
+```ruby
+/Documentos/software clinico/
+```
+## En el directorio de la carpeta clic derecho abrir git-bash
 ## Crear proyecto con LARAVEL (API)
+```ruby
+composer create-project laravel/laravel api-clinica
+```
+## Abrir git-bash en el directorio de la carpeta api-clinica
+```ruby
+php artisan route:list
+```
 ## Seguir los pasos de esta web
 https://www.binaryboxtuts.com/php-tutorials/laravel-8-json-web-tokenjwt-authentication/
 composer create-project laravel/laravel api-clinica
