@@ -101,3 +101,14 @@ php artisan make:controller AuthController
 ## Modificar el archivo routes/api.php
 ## copiar y pegar todo lo correspondiente a ese archivo descrito en el enlace
 ```
+##LARAVEL
+``` ruby
+gitbash/api-clinica/
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan optimize:clear
+```
+## Seguir los pasos de lo siguiente
+``` ruby
+https://spatie.be/docs/laravel-permission/v5/basic-usage/new-app
+```
