@@ -97,11 +97,25 @@ class User extends Authenticatable implements JWTSubject
 ## Crear el auto controller
 ``` ruby
 php artisan make:controller AuthController
+```
 ## Modificar el archivo app/Http/Controllers/AuthController.php
 ## copiar y pegar todo lo correspondiente a ese archivo descrito en el enlace
-## Modificar el archivo routes/api.php
-## copiar y pegar todo lo correspondiente a ese archivo descrito en el enlace
+## Modificar el archivo routes/api.php pegar al final lo siguiente
+``` ruby
+Route::group([
+ 
+    'middleware' => 'api',
+    'prefix' => 'auth'
+ 
+], function ($router) {
+    Route::post('/register', [AuthController::class, 'register'])->name('register');
+    Route::post('/login', [AuthController::class, 'login'])->name('login');
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::post('/refresh', [AuthController::class, 'refresh'])->name('refresh');
+    Route::post('/me', [AuthController::class, 'me'])->name('me');
+});
 ```
+#importar la clase AuthController ->importante
 ##LARAVEL
 ``` ruby
 gitbash/api-clinica/
