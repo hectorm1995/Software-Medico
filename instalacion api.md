@@ -115,8 +115,8 @@ Route::group([
     Route::post('/me', [AuthController::class, 'me'])->name('me');
 });
 ```
-#importar la clase AuthController ->importante
-##LARAVEL
+## importar la clase AuthController ->importante
+## LARAVEL
 ``` ruby
 gitbash/api-clinica/
 composer require spatie/laravel-permission
