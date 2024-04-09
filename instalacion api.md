@@ -1,6 +1,6 @@
 ## REQUISITOS DEL PROYECTO
 ```ruby
-PHP v8.1: 
+PHP v8.1: https://www.apachefriends.org/es/download.html
 Laravel v10.10: https://angular.io/cli
 Node js v18.20: https://nodejs.org/en/download
 Composer v2.7.2: https://getcomposer.org/download/
