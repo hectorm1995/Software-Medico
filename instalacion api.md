@@ -1,8 +1,9 @@
 ## REQUISITOS DEL PROYECTO
 ```ruby
-PHP v8.1
-Laravel v10.10
-Node js v18.20
+PHP v8.1: 
+Laravel v10.10: https://angular.io/cli
+Node js v18.20: https://nodejs.org/en/download
+Composer v2.7.2: https://getcomposer.org/download/
 ```
 ## Instalar xampp
 ```ruby
