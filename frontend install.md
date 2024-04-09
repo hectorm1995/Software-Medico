@@ -41,6 +41,8 @@ let URL = URL_SERVICIOS+"/auth/login";
 ## modificar los archivos
 /admin-clinica/src/app/shared/auth/auth.service.ts
 /admin-clinica/src/app/authentication/login/login.component.ts
+/admin-clinica/src/app/authentication/login/login.component.html
 /admin-clinica/src/app/common-component/header/header.component.html
 /admin-clinica/src/app/common-component/header/header.component.ts
 /admin-clinica/src/app/core/components/uikit/uikit.component.html
+/admin-clinica/src/app/shared/gaurd/auth.gaurd.ts
