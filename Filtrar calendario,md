@@ -1,0 +1,16 @@
+descargar e instalar libreria moment en full calendar
+```ruby
+npm install @fullcalendar/moment
+```
+```ruby
+import timeGridPlugin from '@fullcalendar/timegrid';
+import interactionPlugin from '@fullcalendar/interaction';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import momentPlugin from '@fullcalendar/moment';
+
+import { AppointmentPayService } from '../../appointment-pay/service/appointment-pay.service';
+import { CalendarAppointmentService } from '../service/calendar-appointment.service';
+import { DoctorService } from '../../doctors/service/doctor.service';
+
+import * as moment from 'moment'; // Importar de esta forma
+```
